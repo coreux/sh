@@ -1,6 +1,6 @@
 AC_INIT(dash, 0.5.7)
 AM_INIT_AUTOMAKE([foreign])
-AC_CONFIG_SRCDIR([src/main.c])
+AC_CONFIG_SRCDIR([main.c])
 
 AC_CONFIG_HEADERS(config.h)
 
@@ -136,5 +136,5 @@ AC_ARG_ENABLE(lineno, AS_HELP_STRING(--disable-lineno, \
 if test "$enable_lineno" != "no"; then
 	AC_DEFINE([WITH_LINENO], 1, [Define if you build with -DWITH_LINENO])
 fi
-AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
